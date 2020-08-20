@@ -13,14 +13,14 @@ step 3. `npx codeceptjs init` - to initalize all the dependencies
 
 1.  Make sure Playwright helper is enabled in codecept.conf.js config:
 
-  `helpers: {
+  ```helpers: {
     Playwright: {
       url: "http://localhost",
       show: true,
       browser: 'chromium',
       waitForNavigation: "networkidle0"
       }
-    }`
+    }```
 
 2. Run `npx codeceptjs gt` - to create a sample Test 
 
