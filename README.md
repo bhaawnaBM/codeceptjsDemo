@@ -3,7 +3,9 @@
 ### Setup
 
 step 1. `cd e2e`
+
 step 2. `npm install codeceptjs playwright@^0.12.1 --save` - to install CodeceptJS with Playwright packages
+
 step 3. `npx codeceptjs init` - to inital all the dependencies
 
 
