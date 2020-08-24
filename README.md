@@ -1,28 +1,27 @@
 ## PLAYWRIGHT with CODECEPTJS
 
+### Pre-requisites
+
+- nodejs
+- 
+
 ### Setup
 
-- To start you need CodeceptJS with Playwright packages installed
-  `npm install codeceptjs playwright@^0.12.1 --save`
+Step 1:  `cd e2e`
 
-- Run the below command to inital all the dependencies
-  `npx codeceptjs init`
+Step 2: run `npm install codeceptjs playwright@^0.12.1 --save` - to install CodeceptJS with Playwright packages
 
+Step 3: run `npx codeceptjs init` - to initalize all the dependencies
+
+Running the above command produces *steps.d.ts* file, which is referenced in the very beginning of a test file. Is it a part of TypeScript definitions which allows IDEs to provide autocompletion when writing tests. *steps.d.ts* file allows IDE to provide autocompletion for *I* object inside Scenario and within blocks.
+
+This file can be added to *gitignore* if not using typescript.
 
 ### Configuring
- 
-- Playwright uses different strategies to detect if a page is loaded. In configuration use waitForNavigation option for that:
 
-- When to consider navigation succeeded, defaults to load. Given an array of event strings, navigation is considered to be successful after all events have been fired. Events can be either:
+1. Make sure Playwright helper is enabled in codecept.conf.js config file:
 
-    load - consider navigation to be finished when the load event is fired.
-    domcontentloaded - consider navigation to be finished when the DOMContentLoaded event is fired.
-    networkidle0 - consider navigation to be finished when there are no more than 0 network connections for at least 500 ms.
-    networkidle2 - consider navigation to be finished when there are no more than 2 network connections for at least 500 ms.
-
-- Make sure Playwright helper is enabled in codecept.conf.js config:
-
-  helpers: {
+ helpers: {
     Playwright: {
       url: "http://localhost",
       show: true,
@@ -31,23 +30,48 @@
     }
   }
 
-- Running the below command will create a sample Test 
-  `npx codeceptjs gt`
+2. Run the command `npx codeceptjs gt` to create a sample Test 
+  
 
-- To execute the test run the command 
-   `npx codeceptjs run --steps`
+### Run Test
+
+- Run `npx codeceptjs run --steps` - to execute the all tests
+
+- Run all tests from current dir
+  `codeceptjs run`
+
+- Load config and run tests from *test* dir
+  `codeceptjs run -c test`
+   
 
 ### BDD Implementation
 
--  We can enable Gherkin for current project by running gherkin:init command on already initialized project:
-  `npx codeceptjs gherkin:init`
-  It will add gherkin section to the current config. It will also prepare directories for features and step definition. And it will create the first feature file for you
+-  `npx codeceptjs gherkin:init` - enables Gherkin for current project/already initialized project:
+  
+  1. The above command will add gherkin section to the config. 
+  2. It will also create directories for features and step definition. 
+  3. It will also create a basic first feature file 
 
-- To run only features use --features option:
-  `npx codeceptjs run --features`
 
-- To run only tests without features use --tests option:
- `npx codeceptjs run --tests`
+### Commands to the run the BDD Tests 
+
+-  `npx codeceptjs run --features` - To run only features use
+
+- `npx codeceptjs run --tests` - To run only tests without features
+
+
+### Why use npx instead of npm
+
+- npm – Javascript package manager
+- npx – Execute npm package binaries ( a tool for executing node packages )
+
+*npx* comes bundled with npm version 5.2+.
+
+*npx* is a npm package runner.
+A major benefit of *npx* is that it will automatically install npm packages that aren’t already installed. *npx* is also very useful in cases where the package needs to be installed then configured before running. *npx* will check whether command exists in $PATH, or in the local project binaries, and execute it. If commands not found, it will be installed prior to execution.
+
+For more understanding on Why CodeceptJS with Playwright, please read my blog
+ 
 
 
 
