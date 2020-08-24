@@ -2,11 +2,11 @@
 
 ### Setup
 
-Step 1:  `cd e2e`
+- `cd e2e`
 
-Step 2: run `npm install codeceptjs playwright@^0.12.1 --save` - to install CodeceptJS with Playwright packages
+- run `npm install codeceptjs playwright@^0.12.1 --save` - to install CodeceptJS with Playwright packages
 
-Step 3: run `npx codeceptjs init` - to initalize all the dependencies
+- run `npx codeceptjs init` - to initalize all the dependencies
 
 Running the above command produces *steps.d.ts* file, which is referenced in the very beginning of a test file. Is it a part of TypeScript definitions which allows IDEs to provide autocompletion when writing tests. *steps.d.ts* file allows IDE to provide autocompletion for *I* object inside Scenario and within blocks.
 
@@ -30,7 +30,7 @@ This file can be added to *gitignore* if not using typescript.
     
     }
   
-  }``
+  }`
 
 2. Run the command `npx codeceptjs gt` to create a sample Test 
   
@@ -59,7 +59,7 @@ This file can be added to *gitignore* if not using typescript.
 
 -  `npx codeceptjs run --features` - To run only features use
 
-- `npx codeceptjs run --tests` - To run only tests without features
+-  `npx codeceptjs run --tests` - To run only tests without features
 
 
 ### Why use npx instead of npm
