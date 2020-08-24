@@ -16,7 +16,7 @@ This file can be added to *gitignore* if not using typescript.
 
 1. Make sure Playwright helper is enabled in codecept.conf.js config file:
 
- ``helpers: {
+ ```helpers: {
     
     Playwright: {
       
@@ -30,7 +30,7 @@ This file can be added to *gitignore* if not using typescript.
     
     }
   
-  }`
+  }```
 
 2. Run the command `npx codeceptjs gt` to create a sample Test 
   
