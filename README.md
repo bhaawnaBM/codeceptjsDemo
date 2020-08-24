@@ -1,10 +1,5 @@
 ## PLAYWRIGHT with CODECEPTJS
 
-### Pre-requisites
-
-- nodejs
-- 
-
 ### Setup
 
 Step 1:  `cd e2e`
@@ -71,7 +66,3 @@ This file can be added to *gitignore* if not using typescript.
 A major benefit of *npx* is that it will automatically install npm packages that aren’t already installed. *npx* is also very useful in cases where the package needs to be installed then configured before running. *npx* will check whether command exists in $PATH, or in the local project binaries, and execute it. If commands not found, it will be installed prior to execution.
 
 For more understanding on Why CodeceptJS with Playwright, please read my blog
- 
-
-
-
