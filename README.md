@@ -17,12 +17,19 @@ This file can be added to *gitignore* if not using typescript.
 1. Make sure Playwright helper is enabled in codecept.conf.js config file:
 
  `helpers: {
+    
     Playwright: {
+      
       url: "http://localhost",
+      
       show: true,
+      
       browser: 'chromium',
+      
       waitForNavigation: "networkidle0"
+    
     }
+  
   }`
 
 2. Run the command `npx codeceptjs gt` to create a sample Test 
