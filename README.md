@@ -16,7 +16,8 @@ This file can be added to *gitignore* if not using typescript.
 
 1. Make sure Playwright helper is enabled in codecept.conf.js config file:
 
- `helpers: {
+ `
+ helpers: {
     
     Playwright: {
       
@@ -30,7 +31,8 @@ This file can be added to *gitignore* if not using typescript.
     
     }
   
-  }`
+  }
+  `
 
 2. Run the command `npx codeceptjs gt` to create a sample Test 
   
@@ -72,4 +74,4 @@ This file can be added to *gitignore* if not using typescript.
 *npx* is a npm package runner.
 A major benefit of *npx* is that it will automatically install npm packages that aren’t already installed. *npx* is also very useful in cases where the package needs to be installed then configured before running. *npx* will check whether command exists in $PATH, or in the local project binaries, and execute it. If commands not found, it will be installed prior to execution.
 
-For more understanding on Why CodeceptJS with Playwright, please read my https://medium.com/@bhaawna1805/bc6770b78cff?source=friends_link&sk=a482c58557f46b07332fc5d51ff5c230
+For more understanding on Why CodeceptJS with Playwright, please read my blog on https://medium.com/@bhaawna1805/bc6770b78cff?source=friends_link&sk=a482c58557f46b07332fc5d51ff5c230
