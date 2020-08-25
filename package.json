@@ -1,8 +1,6 @@
 {
     "devDependencies": {
         "codeceptjs": "^2.6.3",
-        "mochawesome": "^6.1.1",
-        "playwright": "^0.17.0",
-        "mocha": "^7.1.2"
+        "playwright": "^0.17.0"
     }
 }

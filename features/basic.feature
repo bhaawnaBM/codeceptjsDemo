@@ -1,10 +1,8 @@
-Feature: Login
-  Verify Login
+Feature: login to github and lookup for the project
+  Verify project lookup
 
-  Scenario: Perform Login operations
-    Given I navigate to the application
-    When I login with username and password
-      | UserName | Password |
-      | admin    | password |
-    And I submit my credentials
-    Then I should see loggedIn
+  Scenario: Perform lookup operations
+    Given I navigate to github main page
+    When I search for my demo project
+    Then I should see the project displayed
+    And I navigate to the project repo page

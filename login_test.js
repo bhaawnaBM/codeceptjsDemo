@@ -1,12 +1,11 @@
-Feature('login');
+Feature('login to github and lookup for the project')
 
-Scenario('testing the demo site', (I) => {
-
-    I.amOnPage('/Login.html');
-    I.fillField("UserName", "admin")
-    I.fillField("Password", "password")
-    I.click("//input[@type='submit']")
-    I.waitForElement({xpath: "//input[@name='Initial']"})
-    I.saveScreenshot("login.jpg")
-
-});
+Scenario('find my project on github', I => {
+	I.amOnPage('/')
+	I.see('Built for developers', 'h1') //assertion
+	I.fillField('Search GitHub', 'codeceptjsDemo')
+	I.pressKey('Enter')
+	I.waitForText('repository results')
+	I.click('bhaawnaBM/codeceptjsDemo')
+	I.see('PLAYWRIGHT with CODECEPTJS', 'h2')
+})

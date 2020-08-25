@@ -1,18 +1,49 @@
 ## PLAYWRIGHT with CODECEPTJS
 
-### Setup
+### Pre-requisite:
 
-- run `npm install codeceptjs playwright@^0.12.1 --save` - to install CodeceptJS with Playwright packages
+1. npm version 5.2 and above
+2. *npx* comes bundled with npm version 5.2+.
+3. VSCode IDE
 
-- run `npx codeceptjs init` - to initalize all the dependencies
+### Getting Started with a CodeceptJS with Playwright Helper
 
-Running the above command produces *steps.d.ts* file, which is referenced in the very beginning of a test file. Is it a part of TypeScript definitions which allows IDEs to provide autocompletion when writing tests. *steps.d.ts* file allows IDE to provide autocompletion for *I* object inside Scenario and within blocks.
+1. Open a terminal in the IDE and `cd` into the folder of the project where you would like your tests to reside.
 
-This file can be added to *gitignore* if not using typescript.
+2. To start we need CodeceptJS with Playwright packages installed. Run the command - `npm install codeceptjs playwright@^1 --save`
+
+3. And then run `npx codeceptjs init` - to initialize basic project
+
+  When we run the above code we will be prompted with below questions:
+
+? Where are your tests located? ./*_test.js(you can give a path of your choice or click enter to consider the default suggested path)
+? What helpers do you want to use? (choose `playwirght` for Helper)
+? Where should logs, screenshots, and reports to be stored? ./output (you can give a path of your choice or click enter to consider the default suggested path)
+? Do you want localization for tests? (Select English)
+? [Playwright] Base url of site to be tested - (Provide the Base url of a website you are testing)
+? [Playwright] Show browser window Yes - ( Select Yes or No depending upon which mode you would like to run your tests- headless or with head)
+? [Playwright] Browser in which testing will be performed. Possible options: chromium, firefox or webkit chromium - (Choose the browser on which you would like to run the tests against)
+
+The required files are created in respective folders as entered. 
+
+Steps file will be created at `./steps_file.js`
+Config file with be created at /Users/<username>/test/codeceptDemo1/codecept.conf.js
+Directory for temporary output files will be created at './output'
+Intellisense will be enabled in /Users/<username>/test/codeceptDemo1/jsconfig.json
+TypeScript Definitions that provides autocompletion in Visual Studio Code and other IDEs will be generated in steps.d.ts 
+
+We are then prompted with few more questions:
+
+? Feature which is being tested (ex: account, login, etc) - Enter the name example: login
+? Filename of a test - Click Enter to create the test file. 
+
+Please Note: You can choose to add *steps.d.ts* file to *gitignore* if not using Typescript.
+
+A basic project structure will now be created.
 
 ### Configuring
 
-1. Make sure Playwright helper is enabled in codecept.conf.js config file:
+1. Navigate to codecept.conf.js config file and  ensure Playwright helper is enabled. 
 
  ```
  helpers: {
@@ -24,42 +55,63 @@ This file can be added to *gitignore* if not using typescript.
       show: true,
       
       browser: 'chromium',
-      
-      waitForNavigation: "networkidle0"
     
     }
   
   }
   ```
 
-2. Run the command `npx codeceptjs gt` to create a sample Test 
+[
+  Basic configurations in the helpder file stands for: 
+- url - Base url of the website under test
+- show - show browser window. Setting it to *true* runs test with head and setting it to *false* runs test in headless mode.
+- browser - a browser to test on, either: chromium, firefox, webkit. Default: chromium.
+]
+
+
+### Create additional tests:
+
+- Additional tests can be created by running the command `npx codeceptjs gt` 
   
 
-### Run Test
+### To Run the Tests
 
-- Run `npx codeceptjs run --steps` - to execute the all tests
+There are different ways to run the test
 
-- Run all tests from current dir
-  `codeceptjs run`
+1. The command `npx codeceptjs run --tests` executes all *_test.js files without printing the steps in the output
 
-- Load config and run tests from *test* dir
-  `codeceptjs run -c test`
+or
+
+2. The command `npx codeceptjs run --steps` to execute the all tests and prints-out the steps in the output. 
+
+or
+
+  
+3. The command `npx codeceptjs run -- <testfilename.js>` executes only the specified test
    
 
-### BDD Implementation
 
--  `npx codeceptjs gherkin:init` - enables Gherkin for current project/already initialized project:
-  
-  1. The above command will add gherkin section to the config. 
-  2. It will also create directories for features and step definition. 
-  3. It will also create a basic first feature file 
+### If you wish to implement BDD in your project then follow the below additional steps
+
+1. To enables Gherkin for current/already initialized project just run the command `npx codeceptjs gherkin:init` - 
+  Running the above command will do the following to the project structure:
+
+    1. Adds gherkin section to the config file - *codecept.config.js*. 
+    2. Also creates directories for features and step definition. 
+    3. It will also create a basic first feature file     
 
 
 ### Commands to the run the BDD Tests 
 
--  `npx codeceptjs run --features` - To run only features use
+1. The command `npx codeceptjs run --steps` to execute the all tests irrespective if features or *_test.js tests and prints out the steps in the output. 
 
--  `npx codeceptjs run --tests` - To run only tests without features
+or 
+
+2. The command `npx codeceptjs run` runs all tests without printing the steps.
+
+or
+
+3. The command `npx codeceptjs run --features` to execute all tests in the features folder without printing the steps in the output
 
 
 ### Why use npx instead of npm
@@ -72,4 +124,4 @@ This file can be added to *gitignore* if not using typescript.
 *npx* is a npm package runner.
 A major benefit of *npx* is that it will automatically install npm packages that aren’t already installed. *npx* is also very useful in cases where the package needs to be installed then configured before running. *npx* will check whether command exists in $PATH, or in the local project binaries, and execute it. If commands not found, it will be installed prior to execution.
 
-For more understanding on Why CodeceptJS with Playwright, please read my blog on https://medium.com/@bhaawna1805/bc6770b78cff?source=friends_link&sk=a482c58557f46b07332fc5d51ff5c230
+For more understanding on Why CodeceptJS with Playwright, please read my [blog](https://medium.com/@bhaawna1805/bc6770b78cff?source=friends_link&sk=a482c58557f46b07332fc5d51ff5c230)

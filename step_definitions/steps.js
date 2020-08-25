@@ -2,21 +2,22 @@ const { I } = inject();
 
 // Add in your custom step files
 
-Given('I navigate to the application', () => {
-  I.amOnPage("/Login.html");
+Given("I navigate to github main page", () => {
+  I.amOnPage("/");
+  I.see("Built for developers", "h1"); //assertion
 });
 
-When('I login with username and password', (table,) => {
-  const cells = table.rows[1].cells;
-  I.fillField("UserName", cells[0].value);
-  I.fillField("Password", cells[1].value);
+When("I search for my demo project", () => {
+  I.fillField("Search GitHub", "codeceptjsDemo");
+  I.pressKey("Enter");
 });
 
-Then('I submit my credentials', () => {
-  I.click("//input[@type='submit']");
+Then("I should see the project displayed", () => {
+  I.waitForText("repository results");
+  I.see("bhaawnaBM/codeceptjsDemo");
 });
 
-Then('I should see loggedIn', () => {
-  I.waitForElement({ xpath: "//input[@name='Initial']" });
-  I.saveScreenshot("login.jpg");
+Then("I navigate to the project repo page", () => {
+  I.click("bhaawnaBM/codeceptjsDemo");
+  I.see("PLAYWRIGHT with CODECEPTJS", "h2");
 });
