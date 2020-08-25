@@ -23,7 +23,7 @@ npx codeceptjs init
 ```
 
   When we run the above code we will be prompted with below questions:
-````
+
 ? Where are your tests located? `./*_test.js` (_you can give a path of your choice or click enter to consider the default suggested path_)
 ? What helpers do you want to use? (choose `playwirght` for Helper)
 ? Where should logs, screenshots, and reports to be stored? `./output`(_you can give a path of your choice or click enter to consider the default suggested path_)
@@ -31,7 +31,7 @@ npx codeceptjs init
 ? [Playwright] Base url of site to be tested - `(Provide the Base url of a website you are testing)`
 ? [Playwright] Show browser window `Yes` - (_Select Yes or No depending upon which mode you would like to run your tests- headless or with head_)
 ? [Playwright] Browser in which testing will be performed. Possible options: chromium, firefox or webkit chromium - (_Choose the browser on which you would like to run the tests against_) 
-````
+
 
 
 The required files are created in respective folders as entered. 
