@@ -24,13 +24,13 @@ npx codeceptjs init
 
   When we run the above code we will be prompted with below questions:
 ````
-<b>? Where are your tests located? `./*_test.js` </b> (_you can give a path of your choice or click enter to consider the default suggested path_)
-<b>? What helpers do you want to use? </b> (choose `playwirght` for Helper) </p>
-<b>? Where should logs, screenshots, and reports to be stored? `./output` </b> (_you can give a path of your choice or click enter to consider the default suggested path_) </p>
-<b>? Do you want localization for tests? </b> (_Select English_) </p>
-<b>? [Playwright] Base url of site to be tested </b> - `(Provide the Base url of a website you are testing)` </p>
-<b>? [Playwright] Show browser window </b>  `Yes` - (_Select Yes or No depending upon which mode you would like to run your tests- headless or with head_) </p>
-<b>? [Playwright] Browser in which testing will be performed. Possible options: chromium, firefox or webkit chromium </b> - (_Choose the browser on which you would like to run the tests against_) </p>
+? Where are your tests located? `./*_test.js` (_you can give a path of your choice or click enter to consider the default suggested path_)
+? What helpers do you want to use? (choose `playwirght` for Helper)
+? Where should logs, screenshots, and reports to be stored? `./output`(_you can give a path of your choice or click enter to consider the default suggested path_)
+? Do you want localization for tests? </b> (_Select English_)
+? [Playwright] Base url of site to be tested - `(Provide the Base url of a website you are testing)`
+? [Playwright] Show browser window `Yes` - (_Select Yes or No depending upon which mode you would like to run your tests- headless or with head_)
+? [Playwright] Browser in which testing will be performed. Possible options: chromium, firefox or webkit chromium - (_Choose the browser on which you would like to run the tests against_) 
 ````
 
 
