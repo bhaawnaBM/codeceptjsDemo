@@ -24,8 +24,8 @@ npx codeceptjs init
 
   When we run the above code we will be prompted with below questions:
 
-<b>? Where are your tests located? *`./*_test.js`* (you can give a path of your choice or click enter to consider the default suggested path)</b>
-<b>? What helpers do you want to use? (choose `playwirght` for Helper)</b>
+<b>? Where are your tests located? `./*_test.js` </b> (you can give a path of your choice or click enter to consider the default suggested path) </p>
+<b>? What helpers do you want to use? </b> (choose `playwirght` for Helper)</p>
 ? Where should logs, screenshots, and reports to be stored? ./output (you can give a path of your choice or click enter to consider the default suggested path)
 ? Do you want localization for tests? (Select English)
 ? [Playwright] Base url of site to be tested - (Provide the Base url of a website you are testing)
