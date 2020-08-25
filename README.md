@@ -10,7 +10,7 @@
 
 1. Open a terminal in the IDE and `cd` into the folder of the project where you would like your tests to reside.
 
-2. To start we need CodeceptJS with Playwright packages installed. Run the command - `npm install codeceptjs playwright@^1 --save`
+2. To start we need CodeceptJS with Playwright packages installed. Run the command - [`npm install codeceptjs playwright@^1 --save`]
 
 3. And then run `npx codeceptjs init` - to initialize basic project
 
