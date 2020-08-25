@@ -1,18 +1,25 @@
-## PLAYWRIGHT with CODECEPTJS
+#PLAYWRIGHT with CODECEPTJS
 
-### Pre-requisite:
+## Pre-requisite:
 
 1. npm version 5.2 and above
 2. *npx* comes bundled with npm version 5.2+.
 3. VSCode IDE
 
-### Getting Started with a CodeceptJS with Playwright Helper
+## Getting Started with a CodeceptJS with Playwright Helper
 
 1. Open a terminal in the IDE and `cd` into the folder of the project where you would like your tests to reside.
 
-2. To start we need CodeceptJS with Playwright packages installed. Run the command - `[npm install codeceptjs playwright@^1 --save]`
+2. To start we need CodeceptJS with Playwright packages installed. Run the command 
+```
+npm install codeceptjs playwright@^1 --save
+```
 
-3. And then run `npx codeceptjs init` - to initialize basic project
+3. And then run the below command to initialize a basic project:
+
+```
+npx codeceptjs init
+```
 
   When we run the above code we will be prompted with below questions:
 
@@ -41,7 +48,7 @@ Please Note: You can choose to add *steps.d.ts* file to *gitignore* if not using
 
 A basic project structure will now be created.
 
-### Configuring
+## Configuring
 
 1. Navigate to codecept.conf.js config file and  ensure Playwright helper is enabled. 
 
@@ -69,29 +76,39 @@ A basic project structure will now be created.
 ]
 
 
-### Create additional tests:
+## Create additional tests:
 
-- Additional tests can be created by running the command `npx codeceptjs gt` 
+- Additional tests can be created by running the command 
+```
+npx codeceptjs gt
+``` 
   
 
-### To Run the Tests
+## To Run the Tests
 
-There are different ways to run the test
+There are different ways to run the test. 
 
-1. The command `npx codeceptjs run --tests` executes all *_test.js files without printing the steps in the output
+1. To executes all `*_test.js` test files without printing the steps in the output, run the command
+```
+npx codeceptjs run --tests
+```
+or
+
+2. If you wish to execute the all tests and prints-out the steps in the output, then run the command
+ ```
+ npx codeceptjs run --steps
+ ``` 
 
 or
 
-2. The command `npx codeceptjs run --steps` to execute the all tests and prints-out the steps in the output. 
-
-or
-
   
-3. The command `npx codeceptjs run -- <testfilename.js>` executes only the specified test
-   
+3. To executes only the specified test, then run the command 
+   ```
+   npx codeceptjs run -- <testfilename.js>
+   ```
 
 
-### If you wish to implement BDD in your project then follow the below additional steps
+## If you wish to implement BDD in your project then follow the below additional steps
 
 1. To enables Gherkin for current/already initialized project just run the command `npx codeceptjs gherkin:init` - 
   Running the above command will do the following to the project structure:
@@ -101,20 +118,27 @@ or
     3. It will also create a basic first feature file     
 
 
-### Commands to the run the BDD Tests 
+## Commands to the run the BDD Tests 
 
-1. The command `npx codeceptjs run --steps` to execute the all tests irrespective if features or *_test.js tests and prints out the steps in the output. 
-
+1. To execute the all tests irrespective of features or *_test.js tests and prints out the steps in the output, then run the command
+```
+npx codeceptjs run --steps
+```
 or 
 
-2. The command `npx codeceptjs run` runs all tests without printing the steps.
-
+2. To run all tests without printing the steps, then run the command
+```
+npx codeceptjs run
+```
 or
 
-3. The command `npx codeceptjs run --features` to execute all tests in the features folder without printing the steps in the output
+3. To execute all tests in the features folder without printing the steps in the output, then run the command
 
+````
+npx codeceptjs run --features
+````
 
-### Why use npx instead of npm
+### Included a small note on Why use npx instead of npm
 
 - npm – Javascript package manager
 - npx – Execute npm package binaries ( a tool for executing node packages )
