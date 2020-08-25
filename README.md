@@ -1,9 +1,13 @@
 ## PLAYWRIGHT with CODECEPTJS
 
-### Setup
-to install CodeceptJS with Playwright packages
+### Pre-requisites
 
-`npm install codeceptjs playwright@^0.12.1 --save` 
+- npm version 6
+
+
+### Setup
+
+- run `npm install codeceptjs playwright@^0.12.1 --save` - to install CodeceptJS with Playwright packages
 
 - run `npx codeceptjs init` - to initalize all the dependencies
 
