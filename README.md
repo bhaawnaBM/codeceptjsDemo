@@ -1,4 +1,4 @@
-#PLAYWRIGHT with CODECEPTJS
+# PLAYWRIGHT with CODECEPTJS
 
 ## Pre-requisite:
 
@@ -130,7 +130,7 @@ or
 ```
 npx codeceptjs run
 ```
-or
+*or*
 
 3. To execute all tests in the features folder without printing the steps in the output, then run the command
 
