@@ -11,6 +11,7 @@
 1. Open a terminal in the IDE and `cd` into the folder of the project where you would like your tests to reside.
 
 2. To start we need CodeceptJS with Playwright packages installed. Run the command 
+
 ```
 npm install codeceptjs playwright@^1 --save
 ```
@@ -23,7 +24,7 @@ npx codeceptjs init
 
   When we run the above code we will be prompted with below questions:
 
-? Where are your tests located? ./*_test.js(you can give a path of your choice or click enter to consider the default suggested path)
+? Where are your tests located? *`./*_test.js`* (you can give a path of your choice or click enter to consider the default suggested path)
 ? What helpers do you want to use? (choose `playwirght` for Helper)
 ? Where should logs, screenshots, and reports to be stored? ./output (you can give a path of your choice or click enter to consider the default suggested path)
 ? Do you want localization for tests? (Select English)
