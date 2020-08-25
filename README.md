@@ -27,25 +27,25 @@ npx codeceptjs init
 <b>? Where are your tests located? </b>`./*_test.js` (*you can give a path of your choice or click enter to consider the default suggested path*) <br>
 <b>? What helpers do you want to use? </b> (choose `playwirght` for Helper) <br>
 <b>? Where should logs, screenshots, and reports to be stored? </b> `./output`(*you can give a path of your choice or click enter to consider the default suggested path*)<br>
-<b>? Do you want localization for tests? </b> (*Select English*)
-<b>? [Playwright] Base url of site to be tested </b> - `(Provide the Base url of a website you are testing)`
-<b>? [Playwright] Show browser window `Yes` </b> - (*Select Yes or No depending upon which mode you would like to run your tests- headless or with head*)
-<b>? [Playwright] Browser in which testing will be performed. Possible options: chromium, firefox or webkit chromium </b> - (*Choose the browser on which you would like to run the tests against*) 
+<b>? Do you want localization for tests? </b> (*Select English*) <br>
+<b>? [Playwright] Base url of site to be tested </b> - `(Provide the Base url of a website you are testing)` <br>
+<b>? [Playwright] Show browser window `Yes` </b> - (*Select Yes or No depending upon which mode you would like to run your tests- headless or with head*) <br>
+<b>? [Playwright] Browser in which testing will be performed. Possible options: chromium, firefox or webkit chromium </b> - (*Choose the browser on which you would like to run the tests against*) <br>
 
 
 
 The required files are created in respective folders as entered. 
 
-Steps file will be created at `./steps_file.js`
-Config file with be created at /Users/<username>/test/codeceptDemo1/codecept.conf.js
-Directory for temporary output files will be created at './output'
-Intellisense will be enabled in /Users/<username>/test/codeceptDemo1/jsconfig.json
-TypeScript Definitions that provides autocompletion in Visual Studio Code and other IDEs will be generated in steps.d.ts 
+Steps file will be created at `./steps_file.js` <br>
+Config file with be created at /Users/<username>/test/codeceptDemo1/codecept.conf.js <br>
+Directory for temporary output files will be created at './output' <br>
+Intellisense will be enabled in /Users/<username>/test/codeceptDemo1/jsconfig.json <br>
+TypeScript Definitions that provides autocompletion in Visual Studio Code and other IDEs will be generated in steps.d.ts <br>
 
 We are then prompted with few more questions:
 
-? Feature which is being tested (ex: account, login, etc) - Enter the name example: login
-? Filename of a test - Click Enter to create the test file. 
+<b>? Feature which is being tested (ex: account, login, etc) </b> - Enter the name example: login <br>
+<b>? Filename of a test </b> - Click Enter to create the test file. <br>
 
 Please Note: You can choose to add *steps.d.ts* file to *gitignore* if not using Typescript.
 
