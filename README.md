@@ -85,7 +85,9 @@ A basic project structure will now be created.
 ```
 npx codeceptjs gt
 ``` 
-  
+ 
+<img width="1342" alt="additions_tests" src="https://user-images.githubusercontent.com/62231865/91279267-9ce5c200-e7c8-11ea-95c8-a3f9084965a9.png">
+
 
 ## To Run the Tests
 
@@ -101,6 +103,9 @@ or
  ```
  npx codeceptjs run --steps
  ``` 
+ 
+ <img width="551" alt="steps_output" src="https://user-images.githubusercontent.com/62231865/91279463-dd454000-e7c8-11ea-8d93-182add4f315d.png">
+ 
 
 or
 
@@ -121,7 +126,10 @@ Running the above command will do the following to the project structure:
 
     1. Adds gherkin section to the config file - *codecept.config.js*. 
     2. Also creates directories for features and step definition. 
-    3. It will also create a basic first feature file     
+    3. It will also create a basic first feature file  
+    
+
+<img width="1090" alt="BDD_basic_structure" src="https://user-images.githubusercontent.com/62231865/91279917-72e0cf80-e7c9-11ea-9a8f-3bff4a59669c.png">
 
 
 ## Commands to the run the BDD Tests 
@@ -130,12 +138,17 @@ Running the above command will do the following to the project structure:
 ```
 npx codeceptjs run --steps
 ```
+<img width="1473" alt="BDD_run_steps" src="https://user-images.githubusercontent.com/62231865/91280211-cd7a2b80-e7c9-11ea-8255-4f5f2b27714b.png">
+
 or 
 
 2. To run all tests without printing the steps, then run the command
 ```
 npx codeceptjs run
 ```
+<img width="475" alt="run_witout_steps" src="https://user-images.githubusercontent.com/62231865/91279545-fa7a0e80-e7c8-11ea-83ef-f320efda8e94.png">
+
+
 *or*
 
 3. To execute all tests in the features folder without printing the steps in the output, then run the command
@@ -143,6 +156,9 @@ npx codeceptjs run
 ````
 npx codeceptjs run --features
 ````
+
+<img width="550" alt="run_features" src="https://user-images.githubusercontent.com/62231865/91280337-f26e9e80-e7c9-11ea-84e3-6461924f8695.png">
+
 
 ### Included a small note on Why use npx instead of npm
 
