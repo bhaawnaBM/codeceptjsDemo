@@ -6,7 +6,7 @@
 2. *npx* comes bundled with npm version 5.2+.
 3. VSCode IDE
 
-## Getting Started with a CodeceptJS with Playwright Helper
+## Getting Started - CodeceptJS  with Playwright Helper
 
 1. Open a terminal in the IDE and `cd` into the folder of the project where you would like your tests to reside.
 
