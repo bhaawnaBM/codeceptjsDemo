@@ -7,7 +7,7 @@
 
 ## Getting Started - CodeceptJS  with Playwright Helper
 
-1. `cd` into the folder of the project where you would like your tests to reside.
+1. Open a terminal `cd` into the folder of the project where you would like your tests to reside.
 
 2. To start we need CodeceptJS with Playwright packages installed. Run the command 
 
