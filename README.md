@@ -111,8 +111,11 @@ or
 
 ## If you wish to implement BDD in your project then follow the below additional steps
 
-1. To enables Gherkin for current/already initialized project just run the command `npx codeceptjs gherkin:init` - 
-  Running the above command will do the following to the project structure:
+1. To enables Gherkin for current/already initialized project just run the command- 
+```
+npx codeceptjs gherkin:init
+``` 
+Running the above command will do the following to the project structure:
 
     1. Adds gherkin section to the config file - *codecept.config.js*. 
     2. Also creates directories for features and step definition. 
