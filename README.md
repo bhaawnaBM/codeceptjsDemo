@@ -45,7 +45,7 @@ TypeScript Definitions that provides autocompletion in Visual Studio Code and ot
 We are then prompted with few more questions:
 
 <b>? Feature which is being tested (ex: account, login, etc) </b> - Enter the name example: login <br>
-<b>? Filename of a test </b> - Click Enter to create the test file. <br>
+<b>? Filename of a test </b> - Click `Enter` to create the test file. <br>
 
 Please Note: You can choose to add *steps.d.ts* file to *gitignore* if not using Typescript.
 
@@ -71,12 +71,10 @@ A basic project structure will now be created.
   }
   ```
 
-[
   Basic configurations in the helpder file stands for: 
 - url - Base url of the website under test
 - show - show browser window. Setting it to *true* runs test with head and setting it to *false* runs test in headless mode.
 - browser - a browser to test on, either: chromium, firefox, webkit. Default: chromium.
-]
 
 
 ## Create additional tests:
