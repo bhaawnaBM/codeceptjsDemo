@@ -97,7 +97,7 @@ There are different ways to run the test.
 ```
 npx codeceptjs run --tests
 ```
-or
+###or
 
 2. If you wish to execute the all tests and prints-out the steps in the output, then run the command
  ```
@@ -107,7 +107,7 @@ or
  <img width="551" alt="steps_output" src="https://user-images.githubusercontent.com/62231865/91279463-dd454000-e7c8-11ea-8d93-182add4f315d.png">
  
 
-or
+###or
 
   
 3. To executes only the specified test, then run the command 
@@ -140,7 +140,7 @@ npx codeceptjs run --steps
 ```
 <img width="1473" alt="BDD_run_steps" src="https://user-images.githubusercontent.com/62231865/91280211-cd7a2b80-e7c9-11ea-8255-4f5f2b27714b.png">
 
-or 
+###or 
 
 2. To run all tests without printing the steps, then run the command
 ```
@@ -149,7 +149,7 @@ npx codeceptjs run
 <img width="475" alt="run_witout_steps" src="https://user-images.githubusercontent.com/62231865/91279545-fa7a0e80-e7c8-11ea-83ef-f320efda8e94.png">
 
 
-*or*
+###or
 
 3. To execute all tests in the features folder without printing the steps in the output, then run the command
 
@@ -160,7 +160,7 @@ npx codeceptjs run --features
 <img width="550" alt="run_features" src="https://user-images.githubusercontent.com/62231865/91280337-f26e9e80-e7c9-11ea-84e3-6461924f8695.png">
 
 
-### Included a small note on Why use npx instead of npm
+## Included a small note on Why use npx instead of npm
 
 - npm – Javascript package manager
 - npx – Execute npm package binaries ( a tool for executing node packages )
