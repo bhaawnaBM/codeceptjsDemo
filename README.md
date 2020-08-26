@@ -51,7 +51,7 @@ Please Note: You can choose to add *steps.d.ts* file to *gitignore* if not using
 
 A basic project structure will now be created.
 
-![ScreenShot](basicProjectStructure.png)
+![basicProjectStructure.png]
 
 ## Configuring
 
