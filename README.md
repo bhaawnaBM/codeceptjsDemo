@@ -37,9 +37,9 @@ npx codeceptjs init
 The required files are created in respective folders as entered. 
 
 - Steps file will be created at `./steps_file.js` <br>
-- Config file with be created at /Users/<<`username`>>/test/codeceptDemo1/codecept.conf.js <br>
+- Config file with be created at /Users/<`username`>/test/codeceptDemo1/codecept.conf.js <br>
 - Directory for temporary output files will be created at './output' <br>
-- Intellisense will be enabled in /Users/<<`username`>>/test/codeceptDemo1/jsconfig.json <br>
+- Intellisense will be enabled in /Users/<`username`>/test/codeceptDemo1/jsconfig.json <br>
 - TypeScript Definitions that provides autocompletion in Visual Studio Code and other IDEs will be generated in steps.d.ts <br>
 
 We are then prompted with few more questions:
