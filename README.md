@@ -99,7 +99,7 @@ npx codeceptjs run --tests
 ```
 ### or
 
-2. If you wish to execute the all tests and prints-out the steps in the output, then run the command
+2. If you wish to execute the all tests and print-out the steps in the output, then run the command
  ```
  npx codeceptjs run --steps
  ``` 
@@ -116,15 +116,18 @@ npx codeceptjs run --tests
    ```
 
 
+
 ## If you wish to implement BDD in your project then follow the below additional steps
 
-1. To enables Gherkin for current/already initialized project just run the command- 
-```
-npx codeceptjs gherkin:init
-``` 
-Running the above command will do the following to the project structure:
 
-    1. Adds gherkin section to the config file - *codecept.config.js*. 
+1. To enables Gherkin for already initialized project just run the command- 
+  
+  ```
+  npx codeceptjs gherkin:init
+  ``` 
+Running the above command will do the following additional changes to the project structure:
+
+    1. Adds gherkin section to the config file - codecept.config.js. 
     2. Also creates directories for features and step definition. 
     3. It will also create a basic first feature file  
     
