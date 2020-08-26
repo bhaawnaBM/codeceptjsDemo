@@ -51,7 +51,7 @@ Please Note: You can choose to add *steps.d.ts* file to *gitignore* if not using
 
 A basic project structure will now be created.
 
-Screen Shot 2020-08-25 at 9.20.39 pm
+
 
 ## Configuring
 
