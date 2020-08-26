@@ -53,9 +53,9 @@ A basic project structure will now be created.
 
 <img width="1543" alt="basicProjectStructure" src="https://user-images.githubusercontent.com/62231865/91278846-14672180-e7c8-11ea-8fa5-4e6c4cbc0fb1.png">
 
-## Configuring
+## Configuration
 
-1. Navigate to codecept.conf.js config file and  ensure Playwright helper is enabled. 
+1. Navigate to `codecept.conf.js` config file and ensure Playwright helper is enabled. 
 
  ```
  helpers: {
@@ -73,7 +73,7 @@ A basic project structure will now be created.
   }
   ```
 
-  Basic configurations in the helpder file stands for: 
+  Basic configurations in the helpder file include: 
 - url - Base url of the website under test
 - show - show browser window. Setting it to *true* runs test with head and setting it to *false* runs test in headless mode.
 - browser - a browser to test on, either: chromium, firefox, webkit. Default: chromium.
