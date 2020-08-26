@@ -44,7 +44,7 @@ The required files are created in respective folders as entered.
 
 We are then prompted with few more questions:
 
-- <b> 1. Feature which is being tested (ex: account, login, etc) </b> - Enter the name example: login <br>
+- <b> 1. Feature which is being tested (ex: account, login, etc) </b> - Enter a name. *Example: login* <br>
 - <b> 2. Filename of a test </b> - Click `Enter` to create the test file. <br>
 
 Please Note: You can choose to add *steps.d.ts* file to *gitignore* if not using Typescript.
