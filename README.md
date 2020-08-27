@@ -44,7 +44,6 @@ npm install codeceptjs playwright@^1 --save
 
 ## To Run the Tests
 
-There are different ways to run the test. 
 
 1. To executes all `*_test.js` test files without printing the steps in the output, run the command
 ```
