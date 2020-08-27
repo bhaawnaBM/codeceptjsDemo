@@ -44,12 +44,11 @@ npm install codeceptjs playwright@^1 --save
 
 ## To Run the Tests
 
-1. To run all tests without printing the steps, then run the command
+1. To run all tests
 
 ```
 npx codeceptjs run
 ```
-<img width="475" alt="run_witout_steps" src="https://user-images.githubusercontent.com/62231865/91279545-fa7a0e80-e7c8-11ea-83ef-f320efda8e94.png">
 
 2. If you wish to execute the all tests and print-out the steps in the output, then run the below command. This command can be used for running the 
 
