@@ -15,42 +15,6 @@
 npm install codeceptjs playwright@^1 --save
 ```
 
-3. And then run the below command to initialize a basic project:
-
-```
-npx codeceptjs init
-```
-
-  When we run the above code we will be prompted with below questions:
-
-- <b> 1. Where are your tests located? </b>`./*_test.js` (*you can give a path of your choice or click enter to consider the default suggested path*) <br>
-- <b> 2. What helpers do you want to use? </b> (choose `playwright` for Helper) <br>
-- <b> 3. Where should logs, screenshots, and reports to be stored? </b> `./output`(*you can give a path of your choice or click enter to consider the default suggested path*)<br>
-- <b> 4. Do you want localization for tests? </b> (*Select English*) <br>
-- <b> 5. [Playwright] Base url of site to be tested </b> - `(Provide the Base url of a website you are testing)` <br>
-- <b> 6. [Playwright] Show browser window `Yes` </b> - (*Select Yes or No depending upon which mode you would like to run your tests- headless or with head*) <br>
-- <b> 7. [Playwright] Browser in which testing will be performed. Possible options: chromium, firefox or webkit chromium </b> - (*Choose the browser on which you would like to run the tests against*) <br>
-
-
-
-The required files are created in respective folders as entered. 
-
-- Steps file will be created at `./steps_file.js` <br>
-- Config file with be created at /Users/<`username`>/test/codeceptDemo1/codecept.conf.js <br>
-- Directory for temporary output files will be created at './output' <br>
-- Intellisense will be enabled in /Users/<`username`>/test/codeceptDemo1/jsconfig.json <br>
-- TypeScript Definitions that provides autocompletion in Visual Studio Code and other IDEs will be generated in steps.d.ts <br>
-
-We are then prompted with few more questions:
-
-- <b> 1. Feature which is being tested (ex: account, login, etc) </b> - Enter a name. *Example: login* <br>
-- <b> 2. Filename of a test </b> - Click `Enter` to create the test file. <br>
-
-<b>Please Note:</b> You can choose to add *`steps.d.ts`* file to *gitignore* if you are not using Typescript.
-
-A basic project structure will now be created.
-
-<img width="1543" alt="basicProjectStructure" src="https://user-images.githubusercontent.com/62231865/91278846-14672180-e7c8-11ea-8fa5-4e6c4cbc0fb1.png">
 
 ## Configuration
 
