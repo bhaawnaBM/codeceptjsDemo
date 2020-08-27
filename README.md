@@ -18,7 +18,7 @@ npm install codeceptjs playwright@^1 --save
 
 ## Configuration
 
-1. Navigate to `codecept.conf.js` config file and ensure Playwright helper is enabled. 
+1. You would see `codecept.conf.js` config file where you would see the following information that can be changes as per the requirement. 
 
  ```
  helpers: {
