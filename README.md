@@ -79,25 +79,6 @@ npx codeceptjs run --tests
    ```
 
 
-
-## If you wish to implement BDD in your project then follow the below additional steps
-
-
-1. To enables Gherkin for already initialized project just run the command- 
-  
-  ```
-  npx codeceptjs gherkin:init
-  ``` 
-Running the above command will do the following additional changes to the project structure:
-
-    1. Adds gherkin section to the config file - codecept.config.js. 
-    2. Also creates directories for features and step definition. 
-    3. It will also create a basic first feature file  
-    
-
-<img width="1090" alt="BDD_basic_structure" src="https://user-images.githubusercontent.com/62231865/91279917-72e0cf80-e7c9-11ea-9a8f-3bff4a59669c.png">
-
-
 ## Commands to the run the BDD Tests 
 
 1. To execute the all tests irrespective of features or *_test.js tests and prints out the steps in the output, then run the command
