@@ -50,6 +50,13 @@ npm install codeceptjs playwright@^1 --save
 npx codeceptjs run
 ```
 
+ ```
+ --steps : This will execute all the tests and print-out the steps in the output
+ --tests : This will execute all *.js test files without printing the steps in the output
+ --<testfilename.js> : This will execute tests in <testfile.js>
+ --features : This will execute all tests in the features folder without printing the steps in the output
+ ``` 
+Note: There many ...........link
 2. If you wish to execute the all tests and print-out the steps in the output, then run the below command. This command can be used for running the 
 
  ```
@@ -69,7 +76,7 @@ npx codeceptjs run --tests
   
 3. To executes only the specified test, then run the command 
    ```
-   npx codeceptjs run -- <testfilename.js>
+   npx codeceptjs run --<testfilename.js>
    ```
 
 
