@@ -59,10 +59,6 @@ You can run the testing by including the following extra parameters
  --features : This will execute all tests in the features folder without printing the steps in the output
  ``` 
 
-<img width="1473" alt="BDD_run_steps" src="https://user-images.githubusercontent.com/62231865/91280211-cd7a2b80-e7c9-11ea-8255-4f5f2b27714b.png">
-
-<img width="550" alt="run_features" src="https://user-images.githubusercontent.com/62231865/91280337-f26e9e80-e7c9-11ea-84e3-6461924f8695.png">
-
 Note: There many ways of running the tests. Please refer [here](https://docs.w3cub.com/codeceptjs/commands/) for more options
 
 
