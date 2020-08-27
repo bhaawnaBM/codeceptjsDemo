@@ -62,14 +62,6 @@ You can run the testing by including the following extra parameters
 Note: There many ways of running the tests. Please refer [here](https://docs.w3cub.com/codeceptjs/commands/) for more options
 
 
-## Included a small note on Why use npx instead of npm
-
-- npm – Javascript package manager
-- npx – Execute npm package binaries ( a tool for executing node packages )
-
-*npx* comes bundled with npm version 5.2+.
-
-*npx* is a npm package runner.
-A major benefit of *npx* is that it will automatically install npm packages that aren’t already installed. *npx* is also very useful in cases where the package needs to be installed then configured before running. *npx* will check whether command exists in $PATH, or in the local project binaries, and execute it. If commands not found, it will be installed prior to execution.
-
 For more understanding on Why CodeceptJS with Playwright, please read my [blog](https://medium.com/@bhaawna1805/bc6770b78cff?source=friends_link&sk=a482c58557f46b07332fc5d51ff5c230)
+
+And for more info on Codecept packages and documentation please refer [here](https://codecept.io/basics/)
