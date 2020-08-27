@@ -42,16 +42,6 @@ npm install codeceptjs playwright@^1 --save
 - browser - a browser to test on, either: chromium, firefox, webkit. Default: chromium.
 
 
-## Create additional tests:
-
-- Additional tests can be created by running the command 
-```
-npx codeceptjs gt
-``` 
- 
-<img width="1342" alt="additions_tests" src="https://user-images.githubusercontent.com/62231865/91279267-9ce5c200-e7c8-11ea-95c8-a3f9084965a9.png">
-
-
 ## To Run the Tests
 
 There are different ways to run the test. 
